@@ -100,7 +100,7 @@ vita_create_self("${SELF}"
   NOASLR
 )
 
-add_custom_command(TARGET ${SELF} POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy
-                ${CMAKE_CURRENT_BINARY_DIR}/eboot.bin
-                ${CMAKE_CURRENT_SOURCE_DIR}/DistributionTool/build/eboot.bin)
+# add_custom_command(TARGET ${SELF} POST_BUILD
+#         COMMAND ${CMAKE_COMMAND} -E copy
+#                 ${CMAKE_CURRENT_BINARY_DIR}/eboot.bin
+#                 ${CMAKE_CURRENT_SOURCE_DIR}/DistributionTool/build/eboot.bin)
