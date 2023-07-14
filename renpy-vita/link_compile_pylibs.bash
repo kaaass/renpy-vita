@@ -12,7 +12,7 @@ rm -r tmp_build/youtube_dl
 pushd tmp_build
 find . -type l -not -name \*.py -delete
 find . -type d -empty -delete
-python -OO -m compileall .
+python2 -OO -m compileall .
 find . -type l -not -name \*.pyc -delete
 7z a -tzip ../python27.zip .
 popd
