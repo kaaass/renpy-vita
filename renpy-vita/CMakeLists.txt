@@ -64,13 +64,13 @@ target_link_libraries("${ELF}"
   avformat
   avfilter
   swscale
-  avutil
   avcodec
   swresample
   mp3lame
   freetype
   jpeg
   png
+  avutil
   SceMotion_stub
   SceCommonDialog_stub
   SceHid_stub
