@@ -85,9 +85,11 @@ cp $(realpath ../renpy/module/gen-static/renpy.text.textsupport.c) source/module
 cp $(realpath ../renpy/module/gen-static/renpy.text.texwrap.c) source/module/renpy.text.texwrap.c
 cp $(realpath ../renpy/module/gen-static/renpy.uguu.gl.c) source/module/renpy.uguu.gl.c
 cp $(realpath ../renpy/module/gen-static/renpy.uguu.uguu.c) source/module/renpy.uguu.uguu.c
+cp $(realpath ../renpy/module/gen-static/renpy.renpyvita.c) source/module/renpy.renpyvita.c
 cp $(realpath ../renpy/module/renpybidicore.c) source/module/renpybidicore.c
 cp $(realpath ../renpy/module/renpysound_core.c) source/module/renpysound_core.c
 cp $(realpath ../renpy/module/ttgsubtable.c) source/module/ttgsubtable.c
+cp $(realpath ../renpy/module/renpy_vita.c) source/module/renpy_vita.c
 
 mkdir -p include/module include/module/pygame_sdl2 include/module/src include/module/fribidi-src/lib
 
@@ -143,3 +145,4 @@ cp $(realpath ../renpy/module/renpygl.h) include/module/renpygl.h
 cp $(realpath ../renpy/module/renpysound_core.h) include/module/renpysound_core.h
 cp $(realpath ../renpy/module/steamcallbacks.h) include/module/steamcallbacks.h
 cp $(realpath ../renpy/module/ttgsubtable.h) include/module/ttgsubtable.h
+cp $(realpath ../renpy/module/renpy_vita.h) include/module/renpy_vita.h
