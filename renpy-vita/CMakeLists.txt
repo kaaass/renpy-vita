@@ -46,6 +46,7 @@ target_link_libraries("${ELF}"
   SDL2_mixer
   SDL2_image
   SDL2
+  libGL_stub
   taihen_stub
   libgpu_es4_ext_stub_weak
   libIMGEGL_stub_weak
@@ -76,6 +77,7 @@ target_link_libraries("${ELF}"
   SceHid_stub
   SceGxm_stub
   SceAudio_stub
+  SceAudioIn_stub
   ScePower_stub
   SceDisplay_stub
   SceCtrl_stub
