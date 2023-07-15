@@ -82,6 +82,7 @@ PyMODINIT_FUNC initrenpy_text_textsupport();
 PyMODINIT_FUNC initrenpy_text_texwrap();
 PyMODINIT_FUNC initrenpy_uguu_gl();
 PyMODINIT_FUNC initrenpy_uguu_uguu();
+PyMODINIT_FUNC initrenpy_renpyvita();
 
 char app_dir_path[0x100];
 char res_1080_path[0x100];
@@ -250,6 +251,7 @@ int main(int argc, char* argv[])
         {"renpy.text.texwrap", initrenpy_text_texwrap},
         {"renpy.uguu.gl", initrenpy_uguu_gl},
         {"renpy.uguu.uguu", initrenpy_uguu_uguu},
+        {"renpy.renpyvita", initrenpy_renpyvita},
 
         {NULL, NULL}
     };
