@@ -103,7 +103,15 @@ vita_create_self("${SELF}"
   NOASLR
 )
 
-# add_custom_command(TARGET ${SELF} POST_BUILD
-#         COMMAND ${CMAKE_COMMAND} -E copy
-#                 ${CMAKE_CURRENT_BINARY_DIR}/eboot.bin
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/DistributionTool/build/eboot.bin)
+add_custom_command(TARGET ${SELF}-self POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy
+                ${CMAKE_CURRENT_BINARY_DIR}/eboot.bin
+                ${CMAKE_CURRENT_SOURCE_DIR}/DistributionTool/build/eboot.bin
+)
+
+add_custom_target(launch
+        COMMAND echo "screen on" | nc $ENV{PSVITAIP} 1338
+        COMMAND echo "destroy" | nc $ENV{PSVITAIP} 1338
+        COMMAND curl -T eboot.bin ftp://$ENV{PSVITAIP}:1337/ux0:/app/$ENV{TESTAPPID}/eboot.bin DEPENDS ${SELF}-self
+        COMMAND echo "launch $ENV{TESTAPPID}" | nc $ENV{PSVITAIP} 1338
+)
