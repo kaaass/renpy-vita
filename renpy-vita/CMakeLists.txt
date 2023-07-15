@@ -78,6 +78,7 @@ target_link_libraries("${ELF}"
   SceGxm_stub
   SceAudio_stub
   SceAudioIn_stub
+  SceAvPlayer_stub
   ScePower_stub
   SceDisplay_stub
   SceCtrl_stub
