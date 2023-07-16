@@ -72,6 +72,8 @@ target_link_libraries("${ELF}"
   jpeg
   png
   avutil
+  intl
+  bz2
   SceMotion_stub
   SceCommonDialog_stub
   SceHid_stub
