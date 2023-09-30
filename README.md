@@ -30,7 +30,6 @@ Clone this repo<br>
 Grab `PSVita_Release.zip` and `vitasdk_stubs.zip` from [PVR_PSP2 releases](https://github.com/GrapheneCt/PVR_PSP2/releases)<br>
 Clone [SDL](https://github.com/libsdl-org/SDL)<br>
 Clone [Python Future](https://github.com/PythonCharmers/python-future)
-
 #### Steps:
 1. Copy the contents of `vitasdk_stubs.zip` into your VitaSDK lib directory
 2. Copy all of the files in [include](https://github.com/GrapheneCt/PVR_PSP2/tree/main/include) into your VitaSDK include directory
